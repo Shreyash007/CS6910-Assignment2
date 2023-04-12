@@ -17,12 +17,14 @@ wget
   ``` 
   !pip install wandb 
   !pip install wget
+  !pip install timm(for EfficinetNetV2)
   ```
  - For running locally, install wandb and other required libraries using following command  
   ``` 
   pip install wandb
   pip install numpy
   pip install pytorch
+  pip install timm(for EfficinetNetV2)
   ```
 
 ## Dataset
