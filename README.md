@@ -62,7 +62,7 @@ The experiments on Part B can be found [here](https://github.com/Shreyash007/CS6
 
 ## Evaluation file for part A(PartA_cmd.py)
 
-For evaluating model download [PartA_cmd.py](https://github.com/Shreyash007/CS6910-Deep-Learning-Course/blob/main/train.py) file. (make sure you have all the prerequisite libraries installed). 
+For evaluating model download [PartA_cmd.py](https://github.com/Shreyash007/CS6910-Assignment2/blob/main/PartA_cmd.py) file. (make sure you have all the prerequisite libraries installed). 
 Make sure you have downloaded the dataset and the directory of dataset should be changed in line 53,54
 ```data_dir = r'C:\Users\SHREYASH\Desktop\CS6910\Assignment 2\Dataset\nature_12K\inaturalist_12K\train'``` 
 ```data_dir_2 = r'C:\Users\SHREYASH\Desktop\CS6910\Assignment 2\Dataset\nature_12K\inaturalist_12K\val'```
@@ -92,7 +92,7 @@ Supported arguments can also be found by:
 ```
 python PartA_cmd.py -h
 ```
-## Evaluation file for part B(PartB_cmd.py)
+## Evaluation file for part B([PartB_cmd.py](https://github.com/Shreyash007/CS6910-Assignment2/blob/main/PartB_cmd.py))
 Please follow the instructions of Part A, for loading dataset.
 And run the following command in the command line(this will take the default arguments).
 ```
