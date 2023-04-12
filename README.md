@@ -105,7 +105,7 @@ The arguments supported by PartB_cmd.py file are:
 | :---: | :-------------: | :----------- |
 | `--wandb_project` | "CS6910-Assignment2" | Project name used to track experiments in Weights & Biases dashboard |
 | `--wandb_entity` | "shreyashgadgil007"  | Wandb Entity used to track experiments in the Weights & Biases dashboard. | 
-| '--freeze_percent' | 0.25 | choice in range (0,1) |
+| `--freeze_percent` | 0.25 | choice in range (0,1) |
 | `--learning_rate` | 0.0003 | choice in range (0,1)|
 | `--beta1` | 0.93 | choice in range (0,1) |
 
