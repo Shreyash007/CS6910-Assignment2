@@ -9,10 +9,11 @@ python 3.9
 numpy 1.21.5
 pytorch
 wget
-
 ```
  - Clone/download  this repository
- - I have conducted all my experiments in Google Collab, for running in google colab, install wandb and wget(for importing dataset) using following command -
+ - I have conducted all my experiments in Google Collab, for running in google colab, install wandb and wget(for importing dataset) using following command 
+ - Enable GPU on colab for faster training
+ 
   ``` 
   !pip install wandb 
   !pip install wget
@@ -29,7 +30,7 @@ wget
 - We use [iNaturalist](https://storage.googleapis.com/wandb_datasets/nature_12K.zip) dataset for our experiments.
 
 # Part A
-## Hyperparameters used in experiments for Part A
+### Hyperparameters used in experiments for Part A
 |Sr. no| Hyperparameter| Variation/values used|
 |------|---------------|-----------------|
 |1.| Activation function| ReLu,GeLU,SiLu, Elu|
@@ -41,19 +42,19 @@ wget
 
 - Note: I have used ADAM optimizer with 0.0003 learning rate and beta1=0.93 for the above experiments
 
-##  Code for Part A
+###  Code for Part A
 
 The code for Part A can be found [here](https://github.com/Shreyash007/CS6910-Deep-Learning-Course/blob/main/Assignment1(Q1_Q3).ipynb).
 
 # Part B
-## Hyperparameters used in experiments for Part B
+### Hyperparameters used in experiments for Part B
 |Sr. no| Hyperparameter| Variation/values used|
 |------|---------------|-----------------|
 |1.| Freeze percent| 0.25,0.5,0.75|
 |2.| Learning rate| 0.0001,0.0003|
 |3.| Beta1| 0.9,0.93,0.95|
 
-## Code for Part B
+### Code for Part B
 
 The code for Part A can be found [here](https://github.com/Shreyash007/CS6910-Deep-Learning-Course/blob/main/Assignment1(Q1_Q3).ipynb).
 
