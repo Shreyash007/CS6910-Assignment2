@@ -43,7 +43,7 @@ wget
 
 ###  Code for Part A
 
-The code for Part A can be found [here](https://github.com/Shreyash007/CS6910-Assignment2/blob/main/Assignment2_part-A.ipynb).
+The experiments for Part A can be found [here](https://github.com/Shreyash007/CS6910-Assignment2/blob/main/Assignment2_part-A.ipynb).
 
 # Part B
 ### Hyperparameters used in experiments for Part B
