@@ -23,7 +23,6 @@ wget
   pip install wandb
   pip install numpy
   pip install pytorch
-  pip install wget
   ```
 
 ## Dataset
@@ -44,7 +43,7 @@ wget
 
 ###  Code for Part A
 
-The code for Part A can be found [here](https://github.com/Shreyash007/CS6910-Deep-Learning-Course/blob/main/Assignment1(Q1_Q3).ipynb).
+The code for Part A can be found [here](https://github.com/Shreyash007/CS6910-Assignment2/blob/main/Assignment2_part-A.ipynb).
 
 # Part B
 ### Hyperparameters used in experiments for Part B
@@ -56,48 +55,53 @@ The code for Part A can be found [here](https://github.com/Shreyash007/CS6910-De
 
 ### Code for Part B
 
-The code for Part A can be found [here](https://github.com/Shreyash007/CS6910-Deep-Learning-Course/blob/main/Assignment1(Q1_Q3).ipynb).
+The code for Part B can be found [here](https://github.com/Shreyash007/CS6910-Assignment2/blob/main/Assignment2_part-B.ipynb).
 
 
-## Evaluation file(train.py)
+## Evaluation file(PartA_cmd.py)
 
-For evaluating model download [train.py](https://github.com/Shreyash007/CS6910-Deep-Learning-Course/blob/main/train.py) file. (make sure you have all the prerequisite libraries installed). 
-
+For evaluating model download [PartA_cmd.py](https://github.com/Shreyash007/CS6910-Deep-Learning-Course/blob/main/train.py) file. (make sure you have all the prerequisite libraries installed). 
+Make sure you have downloaded the dataset and the directory of dataset should be changed in line 53,54
+```data_dir = r'C:\Users\SHREYASH\Desktop\CS6910\Assignment 2\Dataset\nature_12K\inaturalist_12K\train'``` 
+```data_dir_2 = r'C:\Users\SHREYASH\Desktop\CS6910\Assignment 2\Dataset\nature_12K\inaturalist_12K\val'```
+To the directory location of your stored dataset
 
 And run the following command in the command line(this will take the default arguments).
 ```
-python train.py 
+python PartA_cmd.py 
 ```
 The default evaluation run can be seen [here](https://wandb.ai/shreyashgadgil007/shreyashgadgil007/runs/) in wandb.
 
 
-The arguments supported by train.py file are:
+The arguments supported by PartA_cmd.py file are:
 
 | Name | Default Value | Description |
 | :---: | :-------------: | :----------- |
-| `--wandb_project` | "CS-6910 A1" | Project name used to track experiments in Weights & Biases dashboard |
-| `--wandb_entity` | "shreyashgadgil007"  | Wandb Entity used to track experiments in the Weights & Biases dashboard. |
-| `--dataset` | "fashion_mnist" | choices:  ["mnist", "fashion_mnist"] |
-| `--epochs` | 30 |  Number of epochs to train neural network.|
-| `--batch_size` | 32 | Batch size used to train neural network. | 
-| `--loss_function` | "cross_entropy" | choices:  ["square_error", "cross_entropy"] |
-| `--optimiser` | "nadam" | choices:  ["gd", "mgd", "ngd", "rmsprop", "adam", "nadam"] | 
-| `--learning_rate` | 0.0001 | Learning rate used to optimize model parameters | 
-| `--weight_decay` | 0.0005 | Weight decay used by optimizers. |
-| `--initialisation` | "xavier" | choices:  ["random", "xavier"] | 
-| `--hidden_layer` | [256,256,256] | Number of hidden layers used in feedforward neural network. | 
-| `--activation` | sigmoid | choices:  ["sigmoid", "tanh", "relu"] |
-| `--dropout_rate` | 0.1 | choice in range (0,1) |
+| `--wandb_project` | "CS6910-Assignment2" | Project name used to track experiments in Weights & Biases dashboard |
+| `--wandb_entity` | "shreyashgadgil007"  | Wandb Entity used to track experiments in the Weights & Biases dashboard. | 
+| `num_filter` |[64,128,256,512,1024] | Enter 5 filters list | 
+| `--activation` | 'elu' | choices:[relu,gelu,elu,silu] |
+| `--kernel_size` | [5,5,5,5,5] | Enter 5 kernel values |
+| `--dropout_rate` | 0.4 | choice in range (0,1) |
+| `--batch_norm` | False | True/False |
+| `--data_augmentation` | False | True/False |
 
 Supported arguments can also be found by:
 ```
-python train.py -h
+python PartA_cmd.py -h
 ```
-#### The default run has 30 epochs and  hidden layer size [256,256,256]. Hence, it may take some time to create the logs. Check the command line for runtime.
+## Evaluation file for part B(PartB_cmd.py)
+Please follow the instructions of Part A, for loading dataset.
+And run the following command in the command line(this will take the default arguments).
+```
+python PartB_cmd.py 
+```
+The default evaluation run can be seen [here](https://wandb.ai/shreyashgadgil007/shreyashgadgil007/runs/) in wandb.
+
 
 ## Report
 
-The wandb report for this assignment can be found [here](https://wandb.ai/shreyashgadgil007/CS-6910%20A1/reports/CS6910-Assignment-1--VmlldzozNTQ1MjU1).
+The wandb report for this assignment can be found [here](https://wandb.ai/shreyashgadgil007/CS6910-Assignment2/reports/CS6910-Assignment-2--VmlldzozOTAzMTc4).
 ## Author
 [Shreyash Gadgil](https://github.com/Shreyash007)
 ED22S016
